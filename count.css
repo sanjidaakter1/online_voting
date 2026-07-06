@@ -1,0 +1,256 @@
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+
+
+body {
+ background-color: #ffff;
+
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /* Light / faded overlay */
+    background-color: rgba(255, 255, 255, 0.15); /* White overlay 50% opacity */
+    z-index: 0;
+}
+
+/* Content on top */
+.container {
+    position: relative; /* To stay above overlay */
+    z-index: 1;
+    padding: 20px;
+}
+
+
+
+header {
+    background: #62d50a;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+
+img{
+  width: 100px; 
+  height: 100px;
+}
+
+
+
+h3 {
+    font-size: 28px;
+    color:white;
+}
+
+
+
+
+
+.container{
+    margin: 30px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    padding: 10px;
+    margin: 5px 0;
+    background: rgba(98, 213, 10, 0.1);
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: #62d50a;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #4caf0a;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #62d50a;
+}
+
+.party {
+    margin-bottom: 20px;
+}
+
+.party span {
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.count {
+    float: right;
+    font-weight: bold;
+    color: #1a73e8;
+}
+
+.bar {
+    width: 100%;
+    height: 20px;
+    background: #e9eef5;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.progress {
+    height: 100%;
+    background: #62d50a;
+    width: 0%;
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+}
+
+.voteBtn {
+    padding: 5px 10px;
+    border: none;
+    background: #62d50a;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.voteBtn:hover {
+    background: #62d50a;
+}
+
+footer {
+            background:#62d50a;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            margin-top: 250px;
+            height: 150px;
+        }
+.social-icons a {
+            color: white;
+            margin: 0 8px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #ffd43b;
+        }
+
+
+h2 {
+    color:white;
+}
+/* =========================
+   MOBILE RESPONSIVE DESIGN
+========================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+
+    .container{
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    img{
+        width: 70px;
+        height: 70px;
+    }
+
+    h3{
+        font-size: 22px;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    header{
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .header-left{
+        flex-direction: column;
+    }
+
+    img{
+        width: 60px;
+        height: 60px;
+    }
+
+    h3{
+        font-size: 18px;
+    }
+
+    .container{
+        width: 95%;
+        margin: 15px auto;
+        padding: 15px;
+    }
+
+    h1{
+        font-size: 22px;
+    }
+
+    .party span{
+        font-size: 14px;
+    }
+
+    .count{
+        font-size: 14px;
+    }
+
+    .bar{
+        height: 15px;
+    }
+
+    footer{
+        margin-top: 40px;
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .social-icons a{
+        font-size: 18px;
+    }
+}
