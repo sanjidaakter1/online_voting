@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+  background-color: #ffff;
+}
+
+/* ===== HEADER ===== */
+.header-left{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    padding:15px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    background:#62d50a;
+}
+h3 {
+    color: white;
+}
+
+.img-box img{
+    width:60px;
+    height:auto;
+}
+
+#title{
+    font-size:20px;
+}
+
+/* NAV */
+.nav{
+    display:flex;
+    gap:20px;
+}
+
+.nav a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.nav a:hover{
+    color:#bc3e0c;
+}
+
+/* ===== LOGIN BOX ===== */
+.box{
+    max-width:350px;
+    width:90%;
+    background:rgba(255,255,255,0.95);
+    border-radius:20px;
+    box-shadow:0 10px 10px rgba(0,0,0,0.5);
+    margin:80px auto;
+    padding:35px;
+    text-align:center;
+}
+
+.box:hover{
+    transform:translateY(-5px);
+}
+
+h2{
+    color:#62d50a;
+}
+
+input[type="text"],
+input[type="password"]{
+    width:100%;
+    border:2px solid rgb(226,111,168);
+    border-radius:15px;
+    padding:10px;
+    margin:8px 0;
+    outline:none;
+}
+
+button{
+    width:120px;
+    border-radius:15px;
+    padding:10px;
+    background:linear-gradient(#62d50a);
+    cursor:pointer;
+    font-size:15px;
+}
+
+button:hover{
+    background:black;
+    color:red;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background:#62d50a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.social-icons a{
+    color:white;
+    margin:0 8px;
+    font-size:22px;
+}
+
+/* =========================
+   📱 MOBILE RESPONSIVE
+========================= */
+@media(max-width:768px){
+
+    .header-left{
+        flex-direction:column;
+        text-align:center;
+        gap:10px;
+    }
+
+    .nav{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .nav a{
+        font-size:16px;
+    }
+
+    button{
+        width:100%;
+        max-width:200px;
+    }
+
+    .box{
+        margin-top:40px;
+        padding:25px;
+    }
+
+    footer{
+        margin-top:60px;
+    }
+}

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Finger Voting</title>
+    <link rel="stylesheet" href="vot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Deprecated <center> এর জন্য CSS */
+        .center-text { text-align: center; }
+        button { display: block; margin: 20px auto; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="https://i.ibb.co.com/5g8RNJTZ/istockphoto-1283508292-1024x1024.jpg" alt="Logo">
+            <h3 id="title">Online Finger Voting System</h3>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </header>
+
+    <div class="center-text">
+        <h2>Cast Your Vote For your candidate</h2>
+        <p>Select one candidate and click "Vote"</p>
+    </div>
+
+    <div class="contrainar1">
+        <form action="view.html" method="get">
+            <div class="row">
+                <!-- Example of one candidate -->
+                <div class="hum">
+                    <img src="all.png" alt="World Humanity Revolution">
+                    <h4>World Humanity Revolution</h4>
+                    <div class="radio">
+                        <input type="radio" name="vote" id="World_Humanity_Revolution">
+                        <label for="World_Humanity_Revolution">Select</label>
+                    </div>
+                </div>
+                 <div class="hum">
+                    <img src="ka.jpg" alt="Bangladesh Community Party">
+                    <h4>Bangladesh Community Party</h4>
+                    <div class="radio">
+                        <input type="radio" name="vote" id="Bangladesh_Community_Party">
+                        <label for="Bangladesh_Community_Party">Select</label>
+                    </div>
+                </div>
+                 <div class="hum">
+                    <img src="rishka.png" alt=" Banladesh Khelafat Majlis">
+                    <h4> Banladesh  Khelafat Majlis</h4>
+                    <div class="radio">
+                        <input type="radio" name="vote" id=" Banladesh_Khelafat_Majlis">
+                        <label for=" Banladesh_Khelafat_Majlis">Select</label>
+                    </div>
+                </div>
+                 <div class="hum">
+                    <img src="do.jpg" alt="Jatiya Ganatantrik party">
+                    <h4>Jatiya Ganatantrik party</h4>
+                    <div class="radio">
+                        <input type="radio" name="vote" id="Jatiya_Ganatantrik_party">
+                        <label for="Jatiya_Ganatantrik_party">Select</label>
+                    </div>
+                </div>
+                 <div class="hum">
+                    <img src="ink.jpg" alt="Banladesh Equal Rights Party">
+                    <h4>Banladesh Equal Rights Party</h4>
+                    <div class="radio">
+                        <input type="radio" name="vote" id="Banladesh_Equal_Rights_Party">
+                        <label for="Banladesh_Equal_Rights_Party">Select</label>
+                    </div>
+                </div>
+                 <div class="hum">
+                    <img src="book.jpg" alt="Bangladesh Nezam-e-Islami Party">
+                    <h4>Bangladesh Nezam-e-Islami Party</h4>
+                    <div class="radio">
+                        <input type="radio" name="vote" id="Bangladesh_Nezam-e-Islami_Party">
+                        <label for="Bangladesh_Nezam-e-Islami_Party">Select</label>
+                    </div>
+                </div>
+                 <div class="hum">
+                    <img src="pi.jpg" alt="Bangladesh Labour Party">
+                    <h4>Bangladesh Labour Party</h4>
+                    <div class="radio">
+                        <input type="radio" name="vote" id="Bangladesh_Labour_Party">
+                        <label for="Bangladesh_Labour_Party">Select</label>
+                    </div>
+                </div>
+                 <div class="hum">
+                    <img src="images.jpg" alt="Islami Andolon Bangladesh">
+                    <h4>Islami Andolon Bangladesh</h4>
+                    <div class="radio">
+                        <input type="radio" name="vote" id="Islami_Andolon_Bangladesh">
+                        <label for="Islami_Andolon_Bangladesh">Select</label>
+                    </div>
+                </div>
+                 <div class="hum">
+                    <img src="watch.png" alt=" Khelafat Majlis">
+                    <h4> Khelafat Majlis</h4>
+                    <div class="radio">
+                        <input type="radio" name="vote" id="Khelafat_Majlis">
+                        <label for="Khelafat_Majlis">Select</label>
+                    </div>
+                </div>
+                 <div class="hum">
+                    <img src="cocount.png" alt="Bangladesh Congress Party">
+                    <h4>Bangladesh Congress Party</h4>
+                    <div class="radio">
+                        <input type="radio" name="vote" id="Bangladesh_Congress_Party">
+                        <label for="Bangladesh_Congress_Party">Select</label>
+                    </div>
+                </div>
+                 <div class="hum">
+                    <img src="mombati.png" alt="Bangladesh Islamic Front">
+                    <h4>Bangladesh Islamic Front</h4>
+                    <div class="radio">
+                        <input type="radio" name="vote" id="Bangladesh_Islamic_Front">
+                        <label for="Bangladesh_Islamic_Front">Select</label>
+                    </div>
+                </div>
+                 <div class="hum">
+                    <img src="download.jpg" alt="NCP">
+                    <h4>NCP</h4>
+                    <div class="radio">
+                        <input type="radio" name="vote" id="NCP">
+                        <label for="NCP">Select</label>
+                    </div>
+                </div>
+                 <div class="hum">
+                    <img src="fruit.jpg" alt="Jatiya Party">
+                    <h4>Jatiya Party</h4>
+                    <div class="radio">
+                        <input type="radio" name="vote" id="Jatiya_Party">
+                        <label for="Jatiya_Party">Select</label>
+                    </div>
+                </div>
+                 <div class="hum">
+                    <img src="fish.jpg" alt="Gono Front">
+                    <h4>Gono Front</h4>
+                    <div class="radio">
+                        <input type="radio" name="vote" id="Gono_Front">
+                        <label for="Gono_Front">Select</label>
+                    </div>
+                </div>
+                 <div class="hum">
+                    <img src="mango.jpg" alt=" NPP">
+                    <h4> NPP</h4>
+                    <div class="radio">
+                        <input type="radio" name="vote" id=" NPP">
+                        <label for=" NPP">Select</label>
+                    </div>
+                </div>
+                 <div class="hum">
+                    <img src="DARIPALA.png" alt="Bangladesh Jamaat-e-Islami">
+                    <h4>Bangladesh Jamaat-e-Islami</h4>
+                    <div class="radio">
+                        <input type="radio" name="vote" id="Bangladesh_Jamaat-e-Islami">
+                        <label for="Bangladesh_Jamaat-e-Islami">Select</label>
+                    </div>
+                </div>
+                 <div class="hum">
+                    <img src="egle.jpg" alt="AB Party">
+                    <h4>AB Party</h4>
+                    <div class="radio">
+                        <input type="radio" name="vote" id="AB_Party">
+                        <label for="AB_Party">Select</label>
+                    </div>
+                </div>
+                 <div class="hum">
+                    <img src="ketly.jpg" alt="Nagorik Oikya">
+                    <h4>Nagorik Oikya</h4>
+                    <div class="radio">
+                        <input type="radio" name="vote" id="Nagorik_Oikya">
+                        <label for="Nagorik_Oikya">Select</label>
+                    </div>
+                </div>
+                 <div class="hum">
+                    <img src="ka.jpg" alt="Gono Odhikar Parishad">
+                    <h4>Gono Odhikar Parishad</h4>
+                    <div class="radio">
+                        <input type="radio" name="vote" id="Gono_Odhikar_Parishad">
+                        <label for="Gono_Odhikar_Parishad">Select</label>
+                    </div>
+                </div>
+                 <div class="hum">
+                    <img src="kachi.jpg" alt=" Bangladesh Samyabadi Dal">
+                    <h4> Bangladesh Samyabadi Dal</h4>
+                    <div class="radio">
+                        <input type="radio" name="vote" id=" Bangladesh_Samyabadi_Dal">
+                        <label for=" Bangladesh_Samyabadi_Dal">Select</label>
+                    </div>
+                </div>
+                 <div class="hum">
+                    <img src="bicycle.png" alt="Krishak Shramik Janata League">
+                    <h4>Krishak Shramik Janata League</h4>
+                    <div class="radio">
+                        <input type="radio" name="vote" id="Krishak_Shramik_Janata_League">
+                        <label for="Krishak_Shramik_Janata_League">Select</label>
+                    </div>
+                </div>
+                 <div class="hum">
+                    <img src="dhn.png" alt="BNP">
+                    <h4>BNP</h4>
+                    <div class="radio">
+                        <input type="radio" name="vote" id="BNP">
+                        <label for="BNP">Select</label>
+                    </div>
+                </div>
+                 <div class="hum">
+                    <img src="pakhi.jpg" alt="Ganatantri Party">
+                    <h4>Ganatantri Party</h4>
+                    <div class="radio">
+                        <input type="radio" name="vote" id="Ganatantri_Party">
+                        <label for="Ganatantri_Party">Select</label>
+                    </div>
+                </div>
+                 <div class="hum">
+                    <img src="ham.jpg" alt=" Bangladesh Workers Party">
+                    <h4> Bangladesh Workers Party</h4>
+                    <div class="radio">
+                        <input type="radio" name="vote" id="Bangladesh_Workers_Party">
+                        <label for="Bangladesh_Workers_Party">Select</label>
+                    </div>
+                </div>
+                 <div class="hum">
+                    <img src="umbra.png" alt="LDP">
+                    <h4>LDP</h4>
+                    <div class="radio">
+                        <input type="radio" name="vote" id="LDP">
+                        <label for="LDP">Select</label>
+                    </div>
+                </div> <div class="hum">
+                    <img src="boat.png" alt="Awami League">
+                    <h4>Awami League</h4>
+                    <div class="radio">
+                        <input type="radio" name="vote" id="Awami_League">
+                        <label for="Awami_League">Select</label>
+                    </div>
+                </div>
+                 <div class="hum">
+                    <img src="ektara.png" alt=" BSP">
+                    <h4> BSP</h4>
+                    <div class="radio">
+                        <input type="radio" name="vote" id=" BSP">
+                        <label for=" BSP">Select</label>
+                    </div>
+                </div> <div class="hum">
+                    <img src="an.png" alt="BNM">
+                    <h4>BNM</h4>
+                    <div class="radio">
+                        <input type="radio" name="vote" id="BNM">
+                        <label for="BNM">Select</label>
+                    </div>
+                </div>
+                <div class="hum">
+                    <img src="HRI.jpg" alt=" Bangladesh Muslim League">
+                    <h4> Bangladesh Muslim League</h4>
+                    <div class="radio">
+                        <input type="radio" name="vote" id="Bangladesh_Muslim_League">
+                        <label for="Bangladesh_Muslim_League">Select</label>
+                    </div>
+                </div>
+
+                <div class="hum">
+                    <img src="fly.png" alt=" Amjanta Dal">
+                    <h4> Amjanta Dal</h4>
+                    <div class="radio">
+                        <input type="radio" name="vote" id=" Amjanta_Dal">
+                        <label for=" Amjanta_Dal">Select</label>
+                    </div>
+                </div>
+
+                <div class="hum">
+                    <img src="ink.jpg" alt="Islamic Front Bangladesh">
+                    <h4>Islamic Front Bangladesh</h4>
+                    <div class="radio">
+                        <input type="radio" name="vote" id="Islamic_Front_Bangladesh">
+                        <label for="Islamic_Front_Bangladesh">Select</label>
+                    </div>
+                </div>
+
+                <div class="hum">
+                    <img src="Rose.jpg" alt="Jaker Party">
+                    <h4>Jaker Party</h4>
+                    <div class="radio">
+                        <input type="radio" name="vote" id="Jaker_Party">
+                        <label for="Jaker_Party">Select</label>
+                    </div>
+                </div>
+
+                <!-- তোমার বাকী সব 후보 similarly unique ids সহ -->
+            </div>
+            <button type="submit">Vote Now</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="social-icons center-text">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <br>
+        <h2 class="center-text">© 2026 Online Finger Voting System</h2>
+    </footer>
+
+    <script src="vot.js"></script>
+</body>
+</html>
